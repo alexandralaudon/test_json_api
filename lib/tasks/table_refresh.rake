@@ -16,7 +16,7 @@ namespace :refresh do
       50.times do |album|
         Album.create(title: Faker::Hacker.say_something_smart, artist_id: artist_id_array.sample)
       end
-      puts "#{Albums.count} albums generated."
+      puts "#{Album.count} albums generated."
 
   end
 end
